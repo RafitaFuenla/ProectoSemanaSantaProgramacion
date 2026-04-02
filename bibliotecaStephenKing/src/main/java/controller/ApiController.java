@@ -12,7 +12,6 @@ import java.net.URL;
 
 public class ApiController {
 
-
     // Hacemos el metodo para la petición GENERAL a la API
     private String hacerPeticion(String urlString) throws IOException {
         URL url = new URL(urlString);
@@ -39,9 +38,4 @@ public class ApiController {
     public String obtenerLibroPorId(int id) throws IOException {
         return hacerPeticion("https://stephen-king-api.onrender.com/api/book/" + id);
     }
-
-
-
-
-
 }

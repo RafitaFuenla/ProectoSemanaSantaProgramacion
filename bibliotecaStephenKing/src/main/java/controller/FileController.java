@@ -21,6 +21,5 @@ public class FileController {
         List<Libro> favoritos = (List<Libro>) ois.readObject();
         ois.close();
         return favoritos;
-
     }
 }

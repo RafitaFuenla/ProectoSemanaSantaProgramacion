@@ -8,16 +8,14 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-    BibliotecaController biblioteca = new BibliotecaController();
-    FileController fileController = new FileController();
+        BibliotecaController biblioteca = new BibliotecaController();
+        FileController fileController = new FileController();
 
-    Scanner sc = new Scanner(System.in);
-    int opcion;
+        Scanner sc = new Scanner(System.in);
+        int opcion;
         do {
             System.out.println("1. Importar libros");
             System.out.println("2. Buscar libro por ID");
@@ -58,5 +56,5 @@ public class Main {
             }
         } while (opcion != 0);
 
-}
+    }
 }

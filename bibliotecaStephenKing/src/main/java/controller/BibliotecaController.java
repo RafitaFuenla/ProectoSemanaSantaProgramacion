@@ -33,7 +33,6 @@ public class BibliotecaController {
 
         todosLibros = mapper.readValue(dataNode.toString(),
                 mapper.getTypeFactory().constructCollectionType(List.class, Libro.class)); //conversion a lista libros
-
     }
 
     public Libro buscarLibroID(int id) throws IOException {
@@ -46,15 +45,12 @@ public class BibliotecaController {
         Libro libro = mapper.treeToValue(dataNode, Libro.class); // Conversion  a un onjeto
 
         return libro;
-
     }
-
 
     public void agregarFavorito(int id) throws IOException {
 
         librosFavoritos.add(buscarLibroID(id));
         System.out.println("Libro añadido a favoritos!");
-
     }
 
     public void mostrarFavoritos() {
